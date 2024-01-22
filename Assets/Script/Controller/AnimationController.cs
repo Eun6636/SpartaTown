@@ -12,7 +12,7 @@ public class AnimationController : MonoBehaviour
     protected virtual void Awake()
     {
         animator = GetComponentInChildren<Animator>();
-        //controller = GetComponent<CharacterController>();
+        controller = GetComponent<CharacterController>();
     }
 
     void Start()
@@ -22,6 +22,6 @@ public class AnimationController : MonoBehaviour
 
     private void Move(Vector2 obj)
     {
-        animator.SetBool(IsWalking, obj.magnitude > .5f);
+        animator.SetBool(IsWalking, obj.magnitude > 0.5f);
     }
 }
