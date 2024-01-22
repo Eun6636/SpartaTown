@@ -16,15 +16,8 @@ public class Character
     public RuntimeAnimatorController Animator;
 }
 
-public class GameManager : MonoBehaviour
-{
-    [SerializeField] private Transform
-    void Awake()
-    {
-        
-    }
-    void Update()
-    {
-        
-    }
-}
+//public class GameManager : MonoBehaviour
+//{
+//    [SerializeField] private Transform
+
+//}
