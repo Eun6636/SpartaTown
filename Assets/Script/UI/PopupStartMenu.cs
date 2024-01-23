@@ -10,6 +10,7 @@ public class PopupStartMenu : MonoBehaviour
     [SerializeField] private InputField InputField;
     [SerializeField] private GameObject Information;
     [SerializeField] private GameObject SelectCharacter;
+    [SerializeField] private GameObject IngameUI;
 
     private ChararcterType chararcterType;
 
@@ -39,6 +40,8 @@ public class PopupStartMenu : MonoBehaviour
             return;
         }
         GameManager.Instance.SetCharacter(chararcterType, InputField.text, CharacterSprite.sprite);
+
+        IngameUI.SetActive(true);
         Destroy(gameObject);
     }
 }
